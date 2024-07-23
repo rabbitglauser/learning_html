@@ -4,6 +4,7 @@
     <!-- first comment -->
     <meta charset="UTF-8">
     <title>My Website</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <style>
         body {
             text-align: center;
@@ -20,12 +21,26 @@
         .red-text {
             color: red;
         }
+
+        p {
+            border: 2px solid powderblue;
+        }
+
+        a:hover, a:active {
+            background: red;
+        }
     </style>
 </head>
 <body>
-    <h1>This is<br>a Heading</h1>
+    <p style="background-image: url('asus.jpg');">You can specify background images<br>learning about HTML</p>
+
+    <p><a href='#c4'>Jump to chapter 4</a></p>
+
+    <a href="default.asp" target="_blank">This is a link</a>
+
+    <marquee><h1>This is<br>a Heading</h1></marquee>
     <hr>
-    <h2 class="tomato">Tomato Heading</h2>
+    <h2 id="c4" class="tomato">Tomato Heading</h2>
     <h2 style="color: lightsalmon">learning to <sub>code</sub> in <sub><del><em><b><i style="color: lightseagreen;">HTML</i></b></em></del></sub> <ins><q>red</q></ins></h2>
     <h3 style="color: #ffffff">Heading 3</h3>
     <h4 style="color:hsla(0, 100%, 50%, 0.5)">Heading 4</h4>
@@ -35,8 +50,8 @@
     <h6><ruby><rt>hello</rt></ruby>Heading 6</h6>
 
     <p>Learning HTML</p>
-    <a href="https://www.w3schools.com">This is a link</a>
-    <img src="asus.jpg" alt="Asus logo" width="104" height="142">
+    <a href="https://www.w3schools.com" target="_blank">Visit W3Schools!</a>
+    <img src="asus.jpg" alt="Asus logo" width="104" height="142" usemap="#workmap">
 
     <p class="red-text">This is a red paragraph.</p>
     <p title="I'm a tooltip">This is a paragraph.</p>
@@ -46,6 +61,7 @@
     <blockquote cite="http://www.worldwildlife.org/who/index.html">
         For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
     </blockquote>
+
 
 
         <address>
